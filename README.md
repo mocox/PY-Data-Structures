@@ -5,6 +5,10 @@ Although these files are written in python the principles are the same for any l
 Just convert them to the language of your choice, javascript, C#, java etc.
 </p>
 
+<p>
+    Although many languages encapsulate these algorithms into their packages / interpreters etc, its good to understand how these work.
+</p>
+
 You can check out these sorting algorithms visually at https://visualgo.net/en
 
 ## A list of Files
