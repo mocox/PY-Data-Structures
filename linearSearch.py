@@ -1,5 +1,6 @@
 ## Linearly search for a number in an array
-## Best Average Worst Big O
+## Big O
+## Best Average Worst 
 ## O(1)  O(n)   O(n)
 
 def linear_search(arr, val):
@@ -9,5 +10,5 @@ def linear_search(arr, val):
     return -1
 
 
-index = linear_search([1,2,3,10,53,8,99], 53)
+index = linear_search([1,2,3,10,104,8,99, 16, 44], 16)
 print("index is :-> ", index)
