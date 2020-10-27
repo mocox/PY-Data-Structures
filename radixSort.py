@@ -1,13 +1,13 @@
 ## Radix Sort
 ## Big O
-## Worst    Average     Best
-##
-##
+## Worst      Average         Best
+## O(n^2)    O(n log n)     O(n log n)
+## Only sorts positive integers
 
 import math
 
 def get_digit(num, i):
-    # get which position the digit is in 10, 100, 1000 etc
+    # get which position the digit is in units, 10, 100, 1000 etc
     return math.floor(abs(num) / math.pow(10,i)) % 10
 
 def digit_count(num):
