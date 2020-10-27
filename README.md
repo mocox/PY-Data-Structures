@@ -14,7 +14,7 @@ You can check out these sorting algorithms visually at https://visualgo.net/en
 ## A list of Files
 
 ### Basic Searches
-linearSearch.py  - shows a search from front to back of a an array <br />
+linearSearch.py  - shows a search from front to back of an array <br />
 binarySearch.py  - shows a binary search of a sorted aray 
 
 ### Basic Sorts
@@ -25,7 +25,7 @@ selectionSort.py - shows a selection sort on an arry
 insertionSort.py  - shows an insertion sort of an array <br />
 seledctionSort.py - shows a selection sort of an array <br />
 mergeSort.py      - shows a merge sort <br />
-quickSort.py      - shows a quick sort of an array
+quickSort.py      - shows a quick sort of an array <br />
 radixSort.py      - shows a radix sort of a numerical array
 
 ## More Coming
