@@ -5,6 +5,7 @@
 ## Only sorts positive integers
 
 import math
+import helpers
 
 def get_digit(num, i):
     # get which position the digit is in units, 10, 100, 1000 etc
@@ -23,23 +24,8 @@ def get_max_digits(nums):
         maxDigits = max(maxDigits, digit_count(nums[i]))
     return maxDigits
 
-def build_holders():
-    # We create a set of arrays to hold the units, 10, 100, 1000 etc
-    arr = []
-    for i in range(0,10):
-        subArray = []
-        arr.append(subArray)
-    
-    return arr
-
-def spread_holders(arr):
-    # like the spread operator in javascript, this concats the multiple arrays into one
-    spread = []
-    for i in range(0, len(arr), 1):
-        spread += arr[i]
-    
-    return spread
-
+spread = lambda arr: helpers.spread_array_of_arrays(arr)
+build_holders = lambda count: helpers.create_double_array(count)    
 
 def radix_sort(nums):
     # get maximum digits in list
@@ -47,7 +33,7 @@ def radix_sort(nums):
     # loop through needed amount of times
     for k in range(0, maxDigitCount, 1):
         # now we need to build the digit holders so we can spread them later
-        digitHolders = build_holders()
+        digitHolders = build_holders(10)
         # loop through all the numbers in the list
         for l in range(0, len(nums), 1):
             # get which holder the number will belong to
@@ -56,7 +42,7 @@ def radix_sort(nums):
             digitHolders[digit].append(nums[l])
         # now we have done that iteration we can spread the values back into
         # nums so we can do another iteration if needed
-        nums = spread_holders(digitHolders)
+        nums = spread(digitHolders)
     
     return nums
 
