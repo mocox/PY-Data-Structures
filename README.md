@@ -21,4 +21,11 @@ binarySearch.py  - shows a binary search of a sorted aray
 bubbleSort.py    - shows a bubble sort of an array <br />
 selectionSort.py - shows a selection sort on an arry
 
+### Other Sorts
+insertionSort.py  - shows an insertion sort of an array <br />
+seledctionSort.py - shows a selection sort of an array <br />
+mergeSort.py      - shows a merge sort <br />
+quickSort.py      - shows a quick sort of an array
+radixSort.py      - shows a radix sort of a numerical array
+
 ## More Coming
