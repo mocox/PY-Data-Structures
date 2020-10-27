@@ -4,11 +4,9 @@
 ## O(n^2)   O(n log n)      O(n log n)
 ##
 
-def swap(arr, index1, index2):
-    # just swap the values at the given indexes
-    temp = arr[index1]
-    arr[index1] = arr[index2]
-    arr[index2] = temp
+import helpers
+
+swap = lambda arr, index1, index2: helpers.swap(arr, index1, index2)
 
 def pivot(arr, start, end): 
     # get the start pivot value   

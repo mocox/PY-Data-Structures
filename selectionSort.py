@@ -4,14 +4,10 @@
 ## O(n^2)   O(n^2)      O(n^2)
 ## Since we are lopping within a loop, it is n^2
 
-def swap(arr, index1, index2):
-    temp = arr[index1]
-    arr[index1] = arr[index2]
-    arr[index2] = temp
+import helpers
 
-    return arr
+swap = lambda arr, index1, index2: helpers.swap(arr, index1, index2)
     
-
 def selection_sort(arr):
     ## outer loop
     for i in range(0, len(arr) - 1, 1):
@@ -25,8 +21,6 @@ def selection_sort(arr):
             swap(arr, i, lowest)
     
     return arr
-
-
 
 arr = selection_sort([0,2,34,22,10,18,13, 1])
 print("Sorted: -> ", arr)
