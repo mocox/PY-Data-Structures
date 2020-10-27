@@ -1,5 +1,5 @@
 
-def swap(arr, index1, index2):
+def swap_items(arr, index1, index2):
     # just swap the values at the given indexes
     temp = arr[index1]
     arr[index1] = arr[index2]

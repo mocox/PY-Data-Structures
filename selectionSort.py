@@ -4,9 +4,9 @@
 ## O(n^2)   O(n^2)      O(n^2)
 ## Since we are lopping within a loop, it is n^2
 
-import helpers
+from helpers import swap_items
 
-swap = lambda arr, index1, index2: helpers.swap(arr, index1, index2)
+swap = lambda arr, index1, index2: swap_items(arr, index1, index2)
     
 def selection_sort(arr):
     ## outer loop

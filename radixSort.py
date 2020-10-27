@@ -5,7 +5,10 @@
 ## Only sorts positive integers
 
 import math
-import helpers
+from helpers import spread_array_of_arrays, create_double_array
+
+spread = lambda arr: spread_array_of_arrays(arr)
+build_holders = lambda count: create_double_array(count)    
 
 def get_digit(num, i):
     # get which position the digit is in units, 10, 100, 1000 etc
@@ -23,9 +26,6 @@ def get_max_digits(nums):
     for i in range(0, len(nums) - 1, 1):
         maxDigits = max(maxDigits, digit_count(nums[i]))
     return maxDigits
-
-spread = lambda arr: helpers.spread_array_of_arrays(arr)
-build_holders = lambda count: helpers.create_double_array(count)    
 
 def radix_sort(nums):
     # get maximum digits in list
