@@ -31,5 +31,11 @@ radixSort.py      - shows a radix sort of a numerical array
 ### Data Structures
 doubleLinkedList.py  - double linked list implement by python <br />
 linkedList.py  - single linked list implement by python <br /> 
+bfs_and_dfs.py  - binary search tree with implementation of breadth first search and depth first search algorythms <br /> 
+graphs.py  - graphs implement by python <br /> 
+implement_hash.py  - hash table implement by python<br /> 
+queue.py - queue implement by python <br /> 
+stacksAR.py  - stack implement by array list <br /> 
+stacksLL.py - stack implement by linked list <br /> 
 
 ## More Coming
